@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Financiamento Imobiliário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a440aae6fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Financiamento Imobiliário</h1>
+        <form id="calculadora-form">
+            <div class="form-group">
+                <label for="valor-imovel">Valor do Imóvel:</label>
+                <input type="text" id="valor-imovel"  data-symbol="R$ " data-thousands="." data-decimal=","  required>
+            </div>
+            <div class="form-group">
+                <label for="entrada">Entrada:</label>
+                <input type="text" id="entrada"  required>
+            </div>
+            <div class="form-group">
+                <label for="taxa-juros">Taxa de Juros Anual (%):</label>
+                <input type="text" step="0.01" id="taxa-juros" required>
+            </div>
+            <div class="form-group">
+                <label for="numero-parcelas">Número de Parcelas:</label>
+                <input type="text" id="numero-parcelas" required>
+            </div>
+            <div class="form-group">
+                <label for="amortizacao-mensal">Amortização Mensal Adicional (R$):</label>
+                <input type="text" id="amortizacao-mensal" placeholder="Ex: 500">
+            </div>            
+            <div class="form-group">
+                <label for="valor-aluguel">Valor Estimado do Aluguel (R$):</label>
+                <input type="text" id="valor-aluguel" placeholder="Ex: 1200">
+            </div>            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="comissao-imobiliaria" name="comissao-imobiliaria">
+                <label for="comissao-imobiliaria">Descontar comissão da imobiliária (15%)</label>
+            </div>
+            <button type="button" id="calcular">Calcular</button>
+            <div id="resumo">
+                <!-- O conteúdo aqui será preenchido pelo script JavaScript -->
+            </div>
+            <button class="toggle-button" id="button-financiamento" data-target="#resultado-tabela">Mostrar Tabela Financiamento</button>             
+            <button class="toggle-button" id="button-amortizacao" data-target="#resultado-tabela-amortizacao-adicional">Mostrar Simulação de Amortização</button>
+            <div id="resultado-tabela"></div>
+            <div id="resultado-tabela-amortizacao-adicional"></div>
+            <button id="voltar-topo"><i class="fa fa-arrow-up"></i></button>
+        </form>
+    </div>
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Incluir jQuery MaskMoney -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <script src="saveData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

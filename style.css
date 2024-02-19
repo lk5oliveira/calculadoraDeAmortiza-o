@@ -1,0 +1,185 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.resultado-valor-total {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    color: #333;
+    font-size: 18px;
+}
+
+.form-group.checkbox {
+    display: flex;
+}
+
+input#comissao-imobiliaria {
+    margin: 0px 10px 5px 0px;
+}
+
+#resumo {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 8px; /* Bordas arredondadas para um visual moderno */
+    padding: 20px; /* Espaçamento interno para não colar o texto na borda */
+    margin-top: 20px; /* Margem superior para distanciar de outros elementos */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para profundidade */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    color: #333; /* Cor do texto escuro para contraste suficiente */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor leitura */
+}
+
+#resumo p {
+    margin: 10px 0; /* Margens para separar parágrafos */
+    font-size: 16px; /* Tamanho do texto */
+}
+
+#resumo p:first-child {
+    margin-top: 0; /* Remove margem superior do primeiro parágrafo */
+}
+
+#resumo p:last-child {
+    margin-bottom: 0; /* Remove margem inferior do último parágrafo */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #eaeaea;
+}
+
+#resultado-tabela, #resultado-tabela-amortizacao-adicional {
+    display: none; /* Esconde as tabelas inicialmente */
+}
+
+.toggle-button {
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    margin: 20px 0px 0px 0px;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+#voltar-topo {
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave de fade in/out */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    display: block; /* Importante para permitir a transição mesmo quando 'display: none' */
+    pointer-events: none; /* Desativa eventos de clique quando o botão está invisível */
+    z-index: 100; /* Garante que o botão fique sobre outros elementos */
+}
+
+#voltar-topo:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.abas-container {
+    margin-bottom: 20px;
+}
+
+.aba {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.aba.ativa {
+    background-color: #007bff;
+    color: white;
+}
+
+#consulta-info {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
